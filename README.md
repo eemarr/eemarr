@@ -1,5 +1,6 @@
-Färgpalett v1 Webbsida Edvin Marklund 2024 html.jpg
+Färgpalett v1 2024 03
 
 BAKGRUND: #222224
 TEXT: #fdfeff
-TEXT 2 / ACCENT : #a0a7a8
+TEXT 2: #a0a7a8
+ACCENT GRÖN: #73AD21
