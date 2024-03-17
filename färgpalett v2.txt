@@ -1,0 +1,7 @@
+
+
+SVART : #2e2e2e
+
+VIT : #e4e4e4
+
+VIT DÄMPAD : #aaaaaa

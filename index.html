@@ -1,40 +1,60 @@
 <!DOCTYPE html>
-    <html>
-    <head>
-    	<meta charset="utf-8">
-    	<meta name="viewport" content="width=device-width, initial-scale=1">
-    	<title>EDVIN MARKLUND</title>
-    	<link rel="stylesheet" href="style.css">
-    </head>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EDVIN MARKLUND</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    <body>
-    	<header>
-    		<h1><a href="index.html">EDVIN MARKLUND</a></h1>
-    		<nav>
-    			<ul class="nav__links">
-    				<li><a href="works.html">WORKS</li>
-    				<li><a href="about.html">ABOUT</li>
-				</ul>
-			</nav>
-			<h1><a href="contact.html">CONTACT</a></h1>
-        </header>
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="works.html">WORKS</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+        <ul>
+            <li><a href="index.html">EDVIN MARKLUND</a></li>
+            <li class="hideOnMobile"><a href="works.html">WORKS</a></li>
+            <li class="hideOnMobile"><a href="about.html">ABOUT</a></li>
+            <li class="hideOnMobile"><a href="contact.html">CONTACT</a></li>
+            <li onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none' 
+        }       
+    </script>
 
 
 
 
-        <div class="wrapper">
-        	<img class="img-home" src="img/VRcomp.jpg" alt="VIRTUE RELAPSE">
-        </div>
 
-    </body>
 
-    <div id="container1">
-    	<div id="main1">
-    		
-    	</div>
+
+
+
+<img class="responsive" src="img/retCrop.jpg" alt="10">
+
+
+
+
+
+
+    
+</body>
+
+    <div class="footer">
+        <br><p style="text-align: left; font-family: monospace;">Copyright &copy: Edvin Marklund. All Rights Reserved.</p>
     </div>
 
-    <footer id="footer">
-    	<br> Copyright &copy: Edvin Marklund. All Rights Reserved.
-    </footer>
 </html>
