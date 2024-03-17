@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>WORKS - EDVIN MARKLUND</title>
+    <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,7 +17,7 @@
             <li><a href="contact.html">CONTACT</a></li>
         </ul>
         <ul>
-            <li><a href="index.html">EDVIN MARKLUND</a></li>
+            <li><a href="index.html" id="edvmar">EDVIN MARKLUND</a></li>
             <li class="hideOnMobile"><a href="works.html">WORKS</a></li>
             <li class="hideOnMobile"><a href="about.html">ABOUT</a></li>
             <li class="hideOnMobile"><a href="contact.html">CONTACT</a></li>
@@ -34,6 +35,139 @@
             sidebar.style.display = 'none' 
         }       
     </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 10</div>
+    <img src="img/hide.jpg" style="width:100%">
+    <div class="text">Hide And Seek, 2024, A3, pen on paper, collage</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 10</div>
+    <img src="img/3d.jpg" style="width:100%">
+    <div class="text">3D Research, 2023, digital collage of 3d renders</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 10</div>
+    <img src="img/kollage1.jpg" style="width:100%">
+    <div class="text">Retail Displacement Network, 2023/2024, installation</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 10</div>
+    <img src="img/nekk.jpg" style="width:100%">
+    <div class="text">neck, 2024, screenshot video</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 10</div>
+    <img src="img/grr.jpg" style="width:100%">
+    <div class="text">field, 2024, screenshot video,</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">6 / 10</div>
+    <img src="img/trra.jpg" style="width:100%">
+    <div class="text">core, 2023, photo</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">7 / 10</div>
+    <img src="img/kollage2.jpg" style="width:100%">
+    <div class="text">untitled, 2024, mixed media dyptik</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">8 / 10</div>
+    <img src="img/plast.jpg" style="width:100%">
+    <div class="text">Plastic Research, 2023, plastic photo digital collage</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">9 / 10</div>
+    <img src="img/Spread.jpg" style="width:100%">
+    <div class="text">Spread 10, 2023/2024, book </div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">10 / 10</div>
+    <img src="img/VRcomp.jpg" style="width:100%">
+    <div class="text">VIRTUE - RELAPSE, 2024, mixed media dyptik </div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+  <span class="dot" onclick="currentSlide(7)"></span>
+  <span class="dot" onclick="currentSlide(8)"></span>
+  <span class="dot" onclick="currentSlide(9)"></span>
+  <span class="dot" onclick="currentSlide(10)"></span>
+</div>
+
+
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+
+
 
 
 

@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CONTACT - EDVIN MARKLUND</title>
+    <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,7 +17,7 @@
             <li><a href="contact.html">CONTACT</a></li>
         </ul>
         <ul>
-            <li><a href="index.html">EDVIN MARKLUND</a></li>
+            <li><a href="index.html" id="edvmar">EDVIN MARKLUND</a></li>
             <li class="hideOnMobile"><a href="works.html">WORKS</a></li>
             <li class="hideOnMobile"><a href="about.html">ABOUT</a></li>
             <li class="hideOnMobile"><a href="contact.html">CONTACT</a></li>
@@ -37,10 +38,28 @@
 
 
 
+<div class="container">
+  <form action="action_page.php">
 
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
-<img class="responsive" src="img/noise.gif" alt="noise">
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="europe">Europe</option>
+      <option value="international">International</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
 
 
 
